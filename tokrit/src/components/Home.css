@@ -22,3 +22,12 @@
     font-weight: bold;
     margin-left: 20%;
 }
+
+.button_round{
+  height: 40px;	
+  width: 110px;	
+  border-radius: 30.5px;	
+  background-color: #26AFDF;	
+  box-shadow: 0 2px 5px 1px rgba(0,0,0,0.3);
+  font-weight: bold;
+}

@@ -20,14 +20,14 @@ export default class Example extends React.Component {
           <Collapse navbar>
             
             <Nav className="ml-auto" navbar>
-              <NavItem className = "navOption">
-                <NavLink href="/announcement">ANNOUNCEMENT</NavLink>
+              <NavItem>
+                <NavLink className = "navOption" href="/announcement">ANNOUNCEMENT</NavLink>
               </NavItem>
-              <NavItem className = "navOption">
-                <NavLink href="about">ABOUT US</NavLink>
+              <NavItem>
+                <NavLink className = "navOption" href="about">ABOUT US</NavLink>
               </NavItem>
-              <NavItem className = "navOption">
-                <NavLink href="menu">MENU3</NavLink>
+              <NavItem>
+                <NavLink className = "navOption" href="menu">MENU3</NavLink>
               </NavItem>
               <NavItem className = "navOption login_circle">
                 <div className = "user_circle">

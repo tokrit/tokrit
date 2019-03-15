@@ -13,7 +13,7 @@ class Home extends Component {
                   <p>3:00PM ~ 9:PM</p>
 
                   <div className="lead text-center">
-                    <Button color="primary" href = "announcement">MORE</Button>
+                    <Button className = "button_round" color="primary" href = "announcement">MORE</Button>
                   </div>
                 </Jumbotron>
               </div>

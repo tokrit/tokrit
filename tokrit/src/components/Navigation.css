@@ -1,11 +1,11 @@
 .navOption{
     height: 22px;	
-    margin: 20px;	
-    color: black;	
+    margin: 20px;		
     font-family: Helvetica;	
-    font-size: 17px;	
+    font-size: 16px;	
     line-height: 22px;
     text-align: center;
+    color: black;
 }
 
 .login_circle{
@@ -19,12 +19,12 @@
 }
 
 .logo {	
-    height: 48px;	
-    width: 149px;
-    margin-left: 145px;	
     color: #13576F;	
+    height: 48px; 
+    width: 149px;  
     font-family: Helvetica;	
-    font-size: 2em;	
+    font-size: 32px;	
     font-weight: bold;	
     line-height: 48px;
+    margin-left:145px;
 }
