@@ -1,25 +1,27 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { Button } from 'reactstrap';
-import Home from './components/Home';
-import About from './components/About';
-import Announcement from './components/Announcement';
-import Menu from './components/Menu';
-import Error from './components/Error';
-import Navigation from './components/Navigation';
+
+import Home from './js/HomePage/Home';
+import About from './js/AboutUs/About';
+import Announcement from './js/Announcement/Announcement';
+import Navigation from './js/NavigationBar/Navigation';
+
+import './css/Home.css';
+import './css/About.css';
+import './css/Announcement.css'
+import './css/Home.css'
+import './css/Navigation.css'
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
+        <div className="main-cover">
           <Navigation />
           <Switch>
             <Route path = "/" component = {Home} exact/>
             <Route path = "/announcement" component = {Announcement} />
             <Route path = "/about" component = {About} />
-            <Route path = "/menu" component = {Menu} />
-            <Route component = {Error} />
           </Switch>
         </div>
       </BrowserRouter>
