@@ -1,28 +1,32 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { Button } from 'reactstrap'
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+import Home from './js/HomePage/Home';
+import About from './js/AboutUs/About';
+import Announcement from './js/Announcement/Announcement';
+import Navigation from './js/NavigationBar/Navigation';
+import LoginPage from './js/LoginPage/LoginPage';
+
+import './scss/Home.scss';
+import './scss/About.scss';
+import './scss/Announcement.scss'
+import './scss/Home.scss'
+import './scss/Navigation.scss'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <Button outline color="primary">primary</Button>
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <BrowserRouter>
+        <div className="main-cover">
+          <Navigation />
+          <Switch>
+            <Route path="/login" component={LoginPage} />
+            <Route path = "/announcement" component = {Announcement} />
+            <Route path = "/about" component = {About} />
+            <Route path = "/" component = {Home} exact/>
+          </Switch>
+        </div>
+      </BrowserRouter>
     );
   }
 }
