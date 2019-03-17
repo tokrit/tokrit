@@ -5,12 +5,13 @@ import Home from './js/HomePage/Home';
 import About from './js/AboutUs/About';
 import Announcement from './js/Announcement/Announcement';
 import Navigation from './js/NavigationBar/Navigation';
+import LoginPage from './js/LoginPage/LoginPage';
 
-import './css/Home.css';
-import './css/About.css';
-import './css/Announcement.css'
-import './css/Home.css'
-import './css/Navigation.css'
+import './scss/Home.scss';
+import './scss/About.scss';
+import './scss/Announcement.scss'
+import './scss/Home.scss'
+import './scss/Navigation.scss'
 
 class App extends Component {
   render() {
@@ -19,9 +20,10 @@ class App extends Component {
         <div className="main-cover">
           <Navigation />
           <Switch>
-            <Route path = "/" component = {Home} exact/>
+            <Route path="/login" component={LoginPage} />
             <Route path = "/announcement" component = {Announcement} />
             <Route path = "/about" component = {About} />
+            <Route path = "/" component = {Home} exact/>
           </Switch>
         </div>
       </BrowserRouter>
