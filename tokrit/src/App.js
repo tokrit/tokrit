@@ -21,7 +21,7 @@ class App extends Component {
           <Navigation isLoggedIn={localStorage.getItem('user')}/>
           <Switch>
             <Route path="/login" component={LoginPage} />
-            <PrivateRoute path="/" component={Home}/>
+            <Route path="/" component={Home}/>
             <PrivateRoute path = "/announcement" component={Announcement} />
             <PrivateRoute path = "/about" component={About} />
           </Switch>
