@@ -15,20 +15,35 @@ const lastChildStyling = {
 }
 
 class Navigation extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { isUserLoggedIn: false };
+  }
+
+  componentDidMount() {
+    console.log(this.props);
+  }
+
   render() {
+    if (this.props.isLoggedIn) {
+      return (
+        <div>
+          <ul className="nav">
+            <li><a style={firstChildStyling} href="/" className="logo">TOKRIT</a></li>
+            <li className="navbar-item"><a href="/announcement">ANNOUNCEMENT</a></li>
+            <li className="navbar-item"><a href="/about">ABOUT US</a></li>
+            <li className="navbar-item">
+              <a href="/login" style={lastChildStyling}>
+                <i className = "far fa-user-circle" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      );
+    }
+
     return (
-      <div>
-        <ul className="nav">
-          <li><a style={firstChildStyling} href="/" className="logo">TOKRIT</a></li>
-          <li className="navbar-item"><a href="/announcement">ANNOUNCEMENT</a></li>
-          <li className="navbar-item"><a href="/about">ABOUT US</a></li>
-          <li className="navbar-item">
-            <a href="/login" style={lastChildStyling}>
-              <i className = "far fa-user-circle" />
-            </a>
-          </li>
-        </ul>
-      </div>
+      <div></div>
     );
   }
 }

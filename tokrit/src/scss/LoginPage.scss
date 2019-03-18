@@ -1,0 +1,126 @@
+$to-base-color: #26AFDF;
+$to-base-white: #fff;
+
+%to-input {
+  width: calc(100% - 3.375rem);
+  height: 3.375rem;
+  border: 2px solid #D4EFF9;
+  border-radius: 2rem;
+  padding-left: 3.375rem;
+  background-repeat: no-repeat;
+  background-size: 1.125rem 1.125rem;
+  background-position: 1.75rem 50%;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    font-size: 1.25rem;
+  }
+
+  & + & {
+    margin-top: .625rem;
+  }
+}
+
+%to-button {
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.loginPage-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(212, 239, 249, .3);
+}
+
+.loginPage-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 1.25rem;
+  margin: auto;
+  height: 33rem;
+  width: 30rem;
+  background-color: $to-base-white;
+  box-shadow: 0 2px 10px 2px rgba(0,0,0,0.2);
+  opacity: 1;
+  z-index: 100;
+}
+
+.loginPage-content {
+  padding: 0 3.75rem;
+}
+
+.loginPage-header {
+  display: flex;
+  padding-top: 3.75rem;
+  flex-direction: column;
+  font-size: 1.125rem;
+  align-items: center;
+
+  & > span {
+    color: $to-base-color;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.loginPage-emailInput {
+  @extend %to-input;
+  background-image: url('../assets/user.svg');
+}
+
+.loginPage-passwordInput {
+  @extend %to-input;
+}
+
+.loginPage-buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginPage-signInButton {
+  @extend %to-button;
+  height: 3.375rem;
+  width: 11.625rem;
+  border-radius: 2rem;
+  background-color: $to-base-color;
+  box-shadow: 0 2px 5px 1px rgba(0,0,0,0.3);
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: $to-base-white;
+}
+
+.loginPage-signUpButton {
+  @extend %to-button;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  color: #555555;
+  font-weight: 500;
+  background: none;
+  border: none;
+}
+
+.loginPage-header + .loginPage-content {
+  margin-top: 1.25rem;
+}
+
+.loginPage-inputContainer + .loginPage-buttonContainer {
+  margin-top: 2.5rem;
+}
+
+.loginPage-signInButton + .loginPage-signUpButton {
+  margin-top: .5rem;
+}
