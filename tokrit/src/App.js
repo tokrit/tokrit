@@ -6,26 +6,25 @@ import About from './js/AboutUs/About';
 import Announcement from './js/Announcement/Announcement';
 import Navigation from './js/NavigationBar/Navigation';
 import LoginPage from './js/LoginPage/LoginPage';
+import { PrivateRoute } from './js/PrivateRoute/PrivateRoute';
 
 import './scss/Home.scss';
 import './scss/About.scss';
-import './scss/Announcement.scss'
-import './scss/Home.scss'
-import './scss/Navigation.scss'
+import './scss/Announcement.scss';
+import './scss/Home.scss';
+import './scss/Navigation.scss';
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="main-cover">
-          <Navigation />
+          <Navigation isLoggedIn={localStorage.getItem('user')}/>
           <Switch>
             <Route path="/login" component={LoginPage} />
-            <Route path = "/announcement" component = {Announcement} />
-            <Route path = "/about" component = {About} />
-            <Route path = "/" component = {Home} exact/>
+            <Route path="/" component={Home}/>
+            <PrivateRoute path = "/announcement" component={Announcement} />
+            <PrivateRoute path = "/about" component={About} />
           </Switch>
-        </div>
       </BrowserRouter>
     );
   }
