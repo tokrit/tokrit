@@ -20,14 +20,10 @@ class Navigation extends React.Component {
     this.state = { isUserLoggedIn: false };
   }
 
-  componentDidMount() {
-    console.log(this.props);
-  }
-
   render() {
-    if (this.props.isLoggedIn) {
-      return (
-        <div>
+    return (
+      <React.Fragment>
+        { this.props.isLoggedIn &&
           <ul className="nav">
             <li><a style={firstChildStyling} href="/" className="logo">TOKRIT</a></li>
             <li className="navbar-item"><a href="/announcement">ANNOUNCEMENT</a></li>
@@ -38,12 +34,8 @@ class Navigation extends React.Component {
               </a>
             </li>
           </ul>
-        </div>
-      );
-    }
-
-    return (
-      <div></div>
+        }
+      </React.Fragment>
     );
   }
 }
