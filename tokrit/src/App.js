@@ -8,12 +8,12 @@ import './scss/Announcement.scss';
 import './scss/Home.scss';
 import './scss/Navigation.scss';
 
-import Home from './routes/HomePage/Home';
-import About from './routes/AboutUs/About';
-import Announcement from './routes/Announcement/Announcement';
-import Login from './routes/LoginPage/LoginPage';
+import Home from './routes/home/index';
+import About from './routes/about/index';
+import Announcement from './routes/announcement/index';
+import Login from './routes/login/index';
 
-import Navigation from './components/NavigationBar/Navigation';
+import Navigation from './components/navigation-bar/index';
 
 class App extends Component {
   render() {
