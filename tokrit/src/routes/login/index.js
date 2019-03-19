@@ -1,26 +1,26 @@
 import React, { Component } from 'react'
 
-import '../../scss/LoginPage.scss';
+import styles from './index-module.scss';
 
 class LoginPage extends Component {
   render() {
     return (
-      <div className="loginPage-container">
-        <div className="loginPage-modal">
-          <div className="loginPage-header">
-            Sign in to <span className="loginPage-headerOrganization">Tokrit</span>
+      <div className={styles.loginPageContainer}>
+        <div className={styles.loginPageModal}>
+          <div className={styles.loginPageHeader}>
+            Sign in to <span className={styles.loginPageHeaderOrganization}>Tokrit</span>
           </div>
-          <div className="loginPage-content">
-            <div className="loginPage-inputContainer">
-              <input type="email" placeholder="Email" className="loginPage-emailInput"/>
-              <input type="password" placeholder="Password" className="loginPage-passwordInput"/>
+          <div className={styles.loginPageContent}>
+            <div className={styles.loginPageInputContainer}>
+              <input type="email" placeholder="Email" className={styles.loginPageEmailInput}/>
+              <input type="password" placeholder="Password" className={styles.loginPagePasswordInput}/>
             </div>
 
-            <div className="loginPage-buttonContainer">
-              <button className="loginPage-signInButton">
+            <div className={styles.loginPageButtonContainer}>
+              <button className={styles.loginPageSignInButton}>
                 Sign In
               </button>
-              <button className="loginPage-signUpButton">
+              <button className={styles.loginPageSignUpButton}>
                 Sign Up
               </button>
             </div>
