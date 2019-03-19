@@ -1,4 +1,4 @@
-.button-container {
+.buttonContainer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,8 +18,8 @@
   border-radius: 2rem;
 }
 
-.main-cover {
-  background: url("../assets/home.png");
+.mainCover {
+  background: url("../../assets/home/home.png");
   background-repeat: no-repeat;
   background-size: 100%;
   position: fixed;
@@ -30,7 +30,7 @@
   z-index: -1;
 }
 
-.main-container {
+.mainContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -38,12 +38,12 @@
   color: #fff;
 }
 
-.main-container h1 {
+.mainContainer h1 {
   padding-bottom: 2rem;
   font-size: 4rem;
 }
 
-.main-container p {
+.mainContainer p {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   font-size: 2rem;

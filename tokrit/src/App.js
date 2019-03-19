@@ -1,30 +1,28 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import Home from './js/HomePage/Home';
-import About from './js/AboutUs/About';
-import Announcement from './js/Announcement/Announcement';
-import Navigation from './js/NavigationBar/Navigation';
-import LoginPage from './js/LoginPage/LoginPage';
-import { PrivateRoute } from './js/PrivateRoute/PrivateRoute';
+import Home from './routes/home/index';
+import About from './routes/about/index';
+import Announcement from './routes/announcement/index';
+import Login from './routes/login/index';
+import Navigation from './components/navigation-bar/index';
+import { PrivateRoute } from './routes/private-route/index';
 
-import './scss/Home.scss';
-import './scss/About.scss';
-import './scss/Announcement.scss';
-import './scss/Home.scss';
-import './scss/Navigation.scss';
+import './App.scss';
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-          <Navigation isLoggedIn={localStorage.getItem('user')}/>
+        <div>
+          <Navigation isLoggedIn={localStorage.getItem('user')} />
           <Switch>
-            <Route path="/login" component={LoginPage} />
-            <Route path="/" component={Home}/>
+            <Route path="/login" component={Login} />
+            <Route path="/" component={Home} />
             <PrivateRoute path = "/announcement" component={Announcement} />
             <PrivateRoute path = "/about" component={About} />
           </Switch>
+        </div>
       </BrowserRouter>
     );
   }

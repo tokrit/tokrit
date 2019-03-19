@@ -34,14 +34,14 @@ $to-base-white: #fff;
   }
 }
 
-.loginPage-container {
+.loginPageContainer {
   display: flex;
   width: 100%;
   height: 100vh;
   background-color: rgba(212, 239, 249, .3);
 }
 
-.loginPage-modal {
+.loginPageModal {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -55,11 +55,11 @@ $to-base-white: #fff;
   z-index: 100;
 }
 
-.loginPage-content {
+.loginPageContent {
   padding: 0 3.75rem;
 }
 
-.loginPage-header {
+.loginPageHeader {
   display: flex;
   padding-top: 3.75rem;
   flex-direction: column;
@@ -75,22 +75,22 @@ $to-base-white: #fff;
   }
 }
 
-.loginPage-emailInput {
+.loginPageEmailInput {
   @extend %to-input;
-  background-image: url('../assets/user.svg');
+  background-image: url('../../assets/login/user.svg');
 }
 
-.loginPage-passwordInput {
+.loginPagePasswordInput {
   @extend %to-input;
 }
 
-.loginPage-buttonContainer {
+.loginPageButtonContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.loginPage-signInButton {
+.loginPageSignInButton {
   @extend %to-button;
   height: 3.375rem;
   width: 11.625rem;
@@ -103,7 +103,7 @@ $to-base-white: #fff;
   color: $to-base-white;
 }
 
-.loginPage-signUpButton {
+.loginPageSignUpButton {
   @extend %to-button;
   text-transform: uppercase;
   font-size: 1.125rem;
@@ -113,14 +113,14 @@ $to-base-white: #fff;
   border: none;
 }
 
-.loginPage-header + .loginPage-content {
+.loginPageHeader + .loginPageContent {
   margin-top: 1.25rem;
 }
 
-.loginPage-inputContainer + .loginPage-buttonContainer {
+.loginPageInputContainer + .loginPageButtonContainer {
   margin-top: 2.5rem;
 }
 
-.loginPage-signInButton + .loginPage-signUpButton {
+.loginPageSignInButton + .loginPageSignUpButton {
   margin-top: .5rem;
 }
