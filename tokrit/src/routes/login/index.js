@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import styles from './index-module.scss';
+import styles from './index.module.scss';
 
 class LoginPage extends Component {
   render() {
