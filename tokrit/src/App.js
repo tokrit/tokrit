@@ -6,7 +6,7 @@ import About from './routes/about/index';
 import Announcement from './routes/announcement/index';
 import Login from './routes/login/index';
 import Navigation from './components/navigation-bar/index';
-import { PrivateRoute } from './routes/private-route/index';
+//import { PrivateRoute } from './routes/private-route/index';
 
 import './App.scss';
 
@@ -19,8 +19,8 @@ class App extends Component {
           <Switch>
             <Route path="/login" component={Login} />
             <Route path="/" component={Home} />
-            <PrivateRoute path = "/announcement" component={Announcement} />
-            <PrivateRoute path = "/about" component={About} />
+            <Route path="/announcement" component={Announcement} />
+            <Route path="/about" component={About} />
           </Switch>
         </div>
       </BrowserRouter>
