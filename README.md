@@ -1,7 +1,5 @@
 # TOKRIT - Main Site
 
-##
-
 This is the front-end portion of the TOKRIT organization main website. The website aims to provide IT related news and information for the Korean IT community within Toronto, Canada.
 
 ## Setup
