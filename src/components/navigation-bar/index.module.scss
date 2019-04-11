@@ -1,43 +1,35 @@
-.navbarItem {
-  font-size: 1.3rem;
-  font-family: Helvetica;
-  display: block;
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1136px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 0 30px;
+  border-bottom: 1px solid #CCCCCC;
 }
 
 .nav {
-  background-color: #fff;
   display: flex;
-  width: 100%;
-  padding: 0;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: auto;
+  font-family: "Gotham Book";
+  font-size: 18px;
+  line-height: 17px;
 }
 
-.nav > :nth-child(1) {
-  margin-right: auto;
+.nav .tab {
+  margin-right: 60px;
+  color: #828282;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
-.nav li {
-  text-align: center;
-  list-style: none;
-}
-
-.nav li a {
-  color: #000;
-  font-family: Helvetica;
-  display: block;
-  padding: 2rem 1rem;
-  text-decoration: none;
-}
-
-.nav li a.firstChildStyling {
-  display: block;
-  margin-left: 10rem;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #13576F;
-}
-
-.nav li a.lastChildStyling {
-  color: #13576F;
-  font-weight: bold;
-  margin-right: 1rem;
+.navbarLogoImg {
+  width: 100px;
+  height: 30px;
+  justify-content: flex-start;
 }
