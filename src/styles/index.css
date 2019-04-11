@@ -66,3 +66,11 @@ table {
 	font-weight: normal;
 	src: url('../assets/fonts/GOTHAMBOOK.woff') format('woff');
 }
+
+@font-face {
+	font-family: 'Gotham Medium';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../assets/fonts/Gotham-Medium.otf') format('opentype'),
+			 url('../assets/fonts/Gotham-MediumItalic.otf') format('opentype')
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Image / svgs
-import LogoIconSmall from '../../assets/home/tokrit-logo-small.svg';
+import LogoIcon from '../../assets/home/tokrit-logo.svg';
 
 import styles from './index.module.scss';
 
@@ -15,7 +15,7 @@ class Navigation extends React.Component {
   render() {
     return (
       <div className={styles.navbar}>
-        <a><img src={LogoIconSmall} className={styles.navbarLogoImg} /></a>
+        <a><img src={LogoIcon} className={styles.navbarLogoImg} /></a>
         <div className={styles.nav}>
           <div className={styles.tab}>About Us</div>
           <div className={styles.tab}>Announcement</div>
