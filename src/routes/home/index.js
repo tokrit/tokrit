@@ -55,10 +55,7 @@ class Home extends Component {
 
           <div className={styles.announceWhiteBox}>
             <div className={styles.announceTextHeader}>SNAKES AND LATTES SOCIAL</div>
-            <div className={styles.announceText}>
-              <p>Saturday, April 6, 2019</p>
-              <p>04:00 PM - 07:00 PM</p>
-              <p>45Eglinton Ave E, Toronto, ON</p>
+            <div className={styles.announceText}>Saturday, April 6, 2019<br/>04:00 PM - 07:00 PM<br/>45Eglinton Ave E, Toronto, ON
             </div>
           </div>
         </div>
