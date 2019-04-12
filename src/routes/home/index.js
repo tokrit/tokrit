@@ -35,9 +35,23 @@ class Home extends Component {
               <p>Games</p>
             </div>
           </div>
-
         </div>
 
+        {/* Announcement */}
+        <div className={styles.announceContainer}>
+          <div className={styles.announceHeader}>
+            This Week's Announcement
+          </div>
+
+          <div className={styles.announceWhiteBox}>
+            <div className={styles.announceTextHeader}>SNAKES AND LATTES SOCIAL</div>
+            <div className={styles.announceText}>
+              <p>Saturday, April 6, 2019</p>
+              <p>04:00 PM - 07:00 PM</p>
+              <p>45Eglinton Ave E, Toronto, ON</p>
+            </div>
+          </div>
+        </div>
       </Fragment>
     );
   }
