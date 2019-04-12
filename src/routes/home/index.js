@@ -1,7 +1,11 @@
 import React, { Component, Fragment } from 'react';
 
+// Images
 import LogoIcon from '../../assets/home/tokrit-logo.svg';
 import Chevron from '../../assets/home/main-page-chevron.svg';
+import siteIcon from '../../assets/home/website-img.svg';
+import mobileIcon from '../../assets/home/mobile-img.svg';
+import gamesIcon from '../../assets/home/games-img.svg';
 
 import styles from './index.module.scss';
 
@@ -20,20 +24,26 @@ class Home extends Component {
 
         {/* Project  */}
         <div className={styles.projectContainer}>
-          <div className={styles.projectHeading}>
-            <p>Our Projects</p>
-          </div>
-
+          <h1 className={styles.projectHeading}>Our Projects</h1>
           <div className={styles.projectItemContainer}>
-            <div className={styles.projectItem}>
-              <p>Website</p>
-            </div>
-            <div className={styles.projectItem}>
-              <p>Mobile App</p>
-            </div>
-            <div className={styles.projectItem}>
-              <p>Games</p>
-            </div>
+            <a href="#" className={styles.projectItemLink}>
+              <div className={styles.projectItem}>
+                <img src={siteIcon} className={styles.itemIcon}/>
+                <p>Website</p>
+              </div>
+            </a>
+            <a href="#" className={styles.projectItemLink}>
+              <div className={styles.projectItem}>
+                <img src={mobileIcon} className={styles.itemIcon}/>
+                <p>Mobile App</p>
+              </div>
+            </a>
+            <a href="#" className={styles.projectItemLink}>
+              <div className={styles.projectItem}>
+                <img src={gamesIcon} className={styles.itemIcon}/>
+                <p>Games</p>
+              </div>
+              </a>
           </div>
         </div>
 
