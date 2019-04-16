@@ -1,0 +1,148 @@
+.mainPageContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0 0;
+    background: url("../../assets/announcement/announcement_bg.png") 1366px 680px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-width: 1366px;
+    min-height: 680px;
+    margin: 0 auto;
+}
+
+.mainHeader{
+    margin-top: 214px;
+    margin-left: 145px;
+    color: #FFFFFF;	
+    font-family: Gotham;	
+    font-size: 80px;	
+    font-weight: 500;	
+    letter-spacing: -1px;	
+    line-height: 96px;
+}
+  
+  .mainLogoIcon {
+    height: 73px;	
+    width: 73px;	
+    border-radius: 10px;
+    margin-right: 10px;	
+  }
+
+  .announceContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 146px 0 0 0;
+    min-width: 1366px;
+    min-height: auto;
+    margin: 0 auto;
+    background-color: #F9F9F9;
+  }
+
+  .announceHeader{
+    color: #555555;	
+    font-family: Gotham;	
+    font-size: 35px;
+    font-weight: 500;	
+    line-height: 42px;
+  }
+
+  .eventBox{
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    margin-top: 91px;
+    width: 853px;	
+    border-radius: 10px 10px 0 0;	
+    background-color: #FFFFFF;	
+    box-shadow: 0 1px 25px 1px rgba(238,238,238,0.75);
+  }
+
+  .eventBox h1{
+    margin-top: 75px; 
+    color: #FF595A;	
+    font-family: Gotham;	
+    font-size: 30px;	
+    font-weight: 500;	
+    line-height: 36px;	
+    margin-bottom: 10px;
+  }
+
+.eventProfile {
+    display: flex;
+    flex-direction: row;
+    width: 675px;
+}
+
+.ImageContainer p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileImageIcon{
+    width: 100px;
+    height: 100px;
+}
+
+.eventContentBox {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 50px 50px;
+}
+
+.eventContentBox span{
+    padding-left: 10px;
+    color: #555555;	
+    font-family: Gotham;	
+    font-size: 13px;	
+    font-weight: 500;	
+    line-height: 22px;
+}
+
+.eventContentBox p{
+    padding-top: 10px;
+    color: #555555;	
+    font-family: Gotham;	
+    font-size: 18px;	
+    font-weight: 500;	
+    line-height: 22px;
+}
+
+.eventButton{
+    height: 60px;	
+    width: 150px;	
+    border-radius: 7px;	
+    background-color: #FF595A;
+    color: #FFFFFF;	
+    font-family: Gotham;	
+    font-size: 24px;	
+    font-weight: 500;	
+    line-height: 29px;	
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.multiEventBox{
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    height: 760px;
+    width: 853px;	
+    margin: 100px 0 124px 0;
+    border-radius: 10px 10px 0 0;	
+    background-color: #FFFFFF;	
+    box-shadow: 0 1px 20px 1px rgba(238,238,238,0.7);
+}
+
+.announceEventItems{
+    margin-top: 1.25rem;
+}
+
+.announceEventItems:first-child{
+    margin-top: 70px;
+}
+
+
+
