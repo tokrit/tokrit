@@ -2,13 +2,20 @@
 	font-family: 'Gotham Book';
 	font-style: normal;
 	font-weight: normal;
-	src: url('../assets/fonts/GOTHAMBOOK.woff') format('woff');
+	src: url('../assets/fonts/gotham-book.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Gotham Medium';
 	font-style: normal;
 	font-weight: normal;
-	src: url('../assets/fonts/Gotham-Medium.otf') format('opentype'),
-			 url('../assets/fonts/Gotham-MediumItalic.otf') format('opentype')
+	src: url('../assets/fonts/gotham-medium.otf') format('opentype'),
+			 url('../assets/fonts/gotham-medium-italic.otf') format('opentype')
+}
+
+@font-face {
+	font-family: 'Gotham Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../assets/fonts/gotham-bold.ttf') format('truetype')
 }
