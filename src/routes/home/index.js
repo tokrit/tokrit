@@ -7,6 +7,11 @@ import siteIcon from '../../assets/home/website-img.svg';
 import mobileIcon from '../../assets/home/mobile-img.svg';
 import gamesIcon from '../../assets/home/games-img.svg';
 
+// import DesignBg from '../../assets/home/team-section-design-bg.png';
+// import WebDevBg from '../../assets/home/team-section-web-bg.png';
+// import MobileDevBg from '../../assets/home/team-section-mobile-bg.png';
+// import GameDevBg from '../../assets/home/team-section-web-bg.png';
+
 import styles from './index.module.scss';
 
 class Home extends Component {
@@ -54,6 +59,42 @@ class Home extends Component {
             <div className={styles.announceTextHeader}>SNAKES AND LATTES SOCIAL</div>
             <div className={styles.announceText}>Saturday, April 6, 2019<br/>04:00 PM - 07:00 PM<br/>45Eglinton Ave E, Toronto, ON
             </div>
+          </div>
+        </div>
+
+        {/* Teams */}
+        <div className={styles.teamContainer}>
+          <div className={`${styles.teamItemContainer} ${styles.left} ${styles.designerBg}`}>
+            <h1>
+              Designers
+              <hr/>
+            </h1>
+            <p className={styles.leftText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div className={`${styles.teamItemContainer} ${styles.right} ${styles.webdevBg}`}>
+            <h1>
+              Web Developers
+              <hr/>
+            </h1>
+            <p className={styles.rightText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div className={`${styles.teamItemContainer} ${styles.left} ${styles.mobiledevBg}`}>
+            <h1>
+              Mobile Developers
+              <hr/>
+            </h1>
+            <p className={styles.leftText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div className={`${styles.teamItemContainer} ${styles.right} ${styles.gamedevBg}`}>
+            <h1>
+              Game Developers
+              <hr/>
+            </h1>
+            <p className={styles.rightText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
         </div>
       </Fragment>
