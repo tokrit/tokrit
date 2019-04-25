@@ -110,6 +110,9 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
             <div className={styles.button}>Contact Us</div>
           </div>
         </div>
+
+        {/* Footer */}
+        <h3 className={styles.footerCopyright}>&#9400; 2019 TOKRIT. All rights reserved.</h3>
       </Fragment>
     );
   }

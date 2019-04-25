@@ -235,7 +235,7 @@
 // Contact Us Section
 .contactContainer {
   display: flex;
-  background: #FAFAFA url("../../assets/home/contact-section-bg.svg") right bottom/820px 552px no-repeat;
+  background: #FAFAFA url("../../assets/home/contact-section-bg.svg") right bottom/820px no-repeat;
   min-width: 1366px;
   min-height: 522px;
   margin: 0 auto;
@@ -274,4 +274,12 @@
       opacity: 0.6;
     }
   }
+}
+
+// Footer
+.footerCopyright {
+  font: 18px/17px "Gotham Book";
+  color: #B3B3B3;
+  margin: 16px 0;
+  text-align: center;
 }
