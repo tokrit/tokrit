@@ -1,3 +1,4 @@
+// Main Section
 .mainPageContainer {
   display: flex;
   flex-direction: column;
@@ -41,13 +42,14 @@
   width: 50px;
   height: 50px;
   opacity: 1;
-  transition: opacity 0.3s;
+  transition: opacity 0.2s;
 
   &:hover {
     opacity: 0.5;
   }
 }
 
+// Project Section
 .projectContainer{
   display: flex;
   flex-direction: column;
@@ -87,7 +89,7 @@
   outline: none;
   text-decoration: none;
   opacity: 1;
-  transition: opacity 0.3s;
+  transition: opacity 0.2s;
 
   &:hover {
     opacity: 0.5;
@@ -112,6 +114,7 @@
   margin-top: 60px;
 }
 
+// Announcement Section
 .announceContainer {
   display: flex;
   flex-direction: row;
@@ -159,6 +162,7 @@
   margin-left: 112px;
 }
 
+// Team Section
 .teamContainer {
   display: flex;
   flex-direction: column;
@@ -175,6 +179,10 @@
   margin-bottom: 160px;
   padding: 0 145px;
   background: 632px 542px no-repeat;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &.left {
     align-items: flex-start;
@@ -222,4 +230,48 @@
 .teamItemContainer p {
   font: 18px/26px "Gotham Book";
   width: 300px;
+}
+
+// Contact Us Section
+.contactContainer {
+  display: flex;
+  background: #FAFAFA url("../../assets/home/contact-section-bg.svg") right bottom/820px 552px no-repeat;
+  min-width: 1366px;
+  min-height: 522px;
+  margin: 0 auto;
+}
+
+.contactTextBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 145px;
+
+  & h2 {
+    font: 24px/34px "Gotham Book";
+    color: #484848;
+    margin-bottom: 20px;
+  }
+
+  & h1 {
+    font: 36px/34px "Gotham Book";
+    color: #FF595A;
+    margin-bottom: 40px;
+  }
+
+  & div.button {
+    padding: 20px 24px;
+    background-color: #FF595A;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+    font: 24px/24px "Gotham Medium";
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
 }

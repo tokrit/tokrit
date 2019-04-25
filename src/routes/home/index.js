@@ -97,6 +97,19 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
         </div>
+
+        {/* Contact Us */}
+        <div className={styles.contactContainer}>
+          <div className={styles.contactTextBox}>
+            <h2>
+              Would you like to work with us?<br/>
+              Looking to meet new professionals?<br/>
+              Do you have any questions?
+            </h2>
+            <h1>Let's keep in touch!</h1>
+            <div className={styles.button}>Contact Us</div>
+          </div>
+        </div>
       </Fragment>
     );
   }
