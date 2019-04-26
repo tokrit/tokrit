@@ -18,7 +18,8 @@ class Home extends Component {
   render() {
     return (
       <Fragment>
-        <div className={styles.mainPageContainer}>
+        {/* Header */}
+        <div className={styles.headerContainer}>
           <h1 className={styles.mainHeader}>We Design. We Create. We Collaborate</h1>
           <div className={styles.logoContainer}>
             <img src={LogoIcon} className={styles.mainLogoIcon} />
@@ -27,7 +28,7 @@ class Home extends Component {
           </div>
         </div>
 
-        {/* Project  */}
+        {/* Project */}
         <div className={styles.projectContainer}>
           <h1 className={styles.projectHeading}>Our Projects</h1>
           <div className={styles.projectItemContainer}>

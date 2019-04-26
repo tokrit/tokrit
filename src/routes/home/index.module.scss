@@ -1,44 +1,42 @@
-// Main Section
-.mainPageContainer {
+@import "../../styles/variables.scss";
+
+// Header Section
+.headerContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  min-width: 1366px;
-  min-height: 800px;
-  margin: 0 auto;
+  min-height: 720px;
   padding: 80px 0 0;
-  background: url("../../assets/home/main-section-bg.png") 1366px 800px;
+  background: url("../../assets/home/main-section-bg.png") center/1366px 800px no-repeat;
+  text-align: center;
+
+  .mainHeader{
+    font: normal 48px "Gotham Book";
+    color: $color-grey-dark;
+    margin-top: 100px;
+  }
 }
 
-.mainHeader {
-  font: normal 48px "Gotham Book";
-  color: #828282;
-  margin-top: 120px;
-  align-items: center;
-}
-
-.logoContainer {
+.headerContainer .logoContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 110px;
+  margin-top: 120px;
+
+  .mainLogoIcon {
+    width: 400px;
+    height: 120px;
+    margin-bottom: 25px;
+  }
+
+  .findOutLink {
+    font: 18px "Gotham Medium";;
+    color: $color-white;
+    letter-spacing: 0.7px;
+    margin: 0 0 15px;
+  }
 }
 
-.mainLogoIcon {
-  width: 400px;
-  height: 120px;
-  margin-bottom: 25px;
-}
-
-.findOutLink {
-  font: 18px "Gotham Medium";;
-  color: #FFFFFF;
-  letter-spacing: 0.7px;
-  margin: 0 0 15px;
-  text-align: center;
-}
-
-.mainChevron {
+.logoContainer .mainChevron {
   width: 50px;
   height: 50px;
   opacity: 1;
@@ -50,42 +48,30 @@
 }
 
 // Project Section
-.projectContainer{
+.projectContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 1366px;
   min-height: 323px;
-  margin: 0 auto;
-  padding: 100px 0 0;
+  padding: 100px 0;
+
+  .projectHeading{
+    font: normal normal 48px/46px "Gotham Medium";
+    color: $color-grey;
+    text-align: center;
+    margin: 0 0 100px;
+  }
 }
 
-.projectHeading{
-  font: normal normal 45px/46px "Gotham Medium";
-  text-align: center;
-  margin: 0 0 100px;
-}
-
-.projectItemContainer{
+.projectItemContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  min-width: 1366px;
-  margin: 0 auto 100px;
-}
-
-.projectItem{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 190px;
-  width: 411px;
-  border-radius: 10px;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 10px 1px rgba(184,184,184,0.5);
+  width: 100%;
 }
 
 .projectItemLink {
+  flex: 1;
   outline: none;
   text-decoration: none;
   opacity: 1;
@@ -96,22 +82,32 @@
   }
 }
 
-.projectItem .itemIcon {
-  margin: -30px 0 0;
-}
+.projectItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 190px;
+  border-radius: 10px;
+  background-color: $color-white;
+  box-shadow: 0 2px 10px 1px rgba(184,184,184,0.5);
 
-.projectItem:first-child {
-  margin-left: 20px;
-}
+  &:first-child {
+    margin-left: 20px;
+  }
 
-.projectItem:last-child {
-  margin-right: 20px;
-}
+  &:last-child {
+    margin-right: 20px;
+  }
 
-.projectItem p {
-  font: 24px "Gotham Book";
-  color: #828282;
-  margin-top: 60px;
+  p {
+    font: 24px "Gotham Book";
+    color: $color-grey-dark;
+    margin-top: 60px;
+  }
+
+  .itemIcon {
+    margin: -30px 0 0;
+  }
 }
 
 // Announcement Section
@@ -120,54 +116,45 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background: #F1F1F1 url("../../assets/home/post-section-bg.png") 1366px 552px;
-  min-width: 1366px;
-  min-height: 522px;
-  margin: 0 auto;
+  padding: 140px 146px;
+  background: #F1F1F1 url("../../assets/home/post-section-bg.png") center/1366px 552px no-repeat;
+  min-height: 272px;
 }
 
 .announceHeader{
   font: 48px/60px "Gotham Medium";
-  color: #B3B3B3;
-  height: 120px;
-  width: 369px;
+  color: $color-grey;
+  flex: 1;
   margin-right: -40px;
   z-index: 2;
 }
 
-.announceWhiteBox{
+.announceWhiteBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 264px;
-  width: 743px;
+  flex: 2;
+  padding: 60px 110px;
   border-radius: 10px;
-  background-color: #FFFFFF;
+  background-color: $color-white;
   box-shadow: 0 2px 10px 1px rgba(184,184,184,0.5);
-}
 
-.announceTextHeader{
-  font: 24px/24px "Gotham Medium";
-  color: #FF595A;
-  width: 372px;
-  height: 22px;
-  margin: 0 0 20px 112px;
-}
+  .announceTextHeader {
+    font: 24px/24px "Gotham Medium";
+    color: $color-coral;
+    margin-bottom: 20px;
+  }
 
-.announceText{
-  font: 24px/34px "Gotham Book";
-  color: #828282;
-  width: 377px;
-  height: 102px;
-  margin-left: 112px;
+  .announceText {
+    font: 24px/34px "Gotham Book";
+    color: $color-grey-dark;
+  }
 }
 
 // Team Section
 .teamContainer {
   display: flex;
   flex-direction: column;
-  width: 1366px;
-  margin: 0 auto;
   padding: 100px 0;
 }
 
@@ -175,7 +162,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 542px;
+  min-height: 542px;
   margin-bottom: 160px;
   padding: 0 145px;
   background: 632px 542px no-repeat;
@@ -211,34 +198,32 @@
   &.gamedevBg {
     background-image: url("../../assets/home/team-section-web-bg.png");
   }
-}
 
-.teamItemContainer h1 {
-  font: 80px/76px "Gotham Bold";
-  max-width: 50%;
-  margin: 0 0 20px;
-  color: #FF595A;
+  h1 {
+    font: 80px/76px "Gotham Bold";
+    max-width: 50%;
+    margin: 0 0 20px;
+    color: $color-coral;
 
-  & hr {
-    margin: 40px 0 0;
-    border: none;
-    height: 2px;
-    background-color: #D8D8D8;
+    hr {
+      margin: 40px 0 0;
+      border: none;
+      height: 2px;
+      background-color: #D8D8D8;
+    }
   }
-}
 
-.teamItemContainer p {
-  font: 18px/26px "Gotham Book";
-  width: 300px;
+  p {
+    font: 18px/26px "Gotham Book";
+    width: 300px;
+  }
 }
 
 // Contact Us Section
 .contactContainer {
   display: flex;
-  background: #FAFAFA url("../../assets/home/contact-section-bg.svg") right bottom/820px no-repeat;
-  min-width: 1366px;
+  background: $color-grey-light url("../../assets/home/contact-section-bg.svg") right bottom/820px no-repeat;
   min-height: 522px;
-  margin: 0 auto;
 }
 
 .contactTextBox {
@@ -248,38 +233,29 @@
   justify-content: center;
   padding: 0 145px;
 
-  & h2 {
+  h2 {
     font: 24px/34px "Gotham Book";
     color: #484848;
     margin-bottom: 20px;
   }
 
-  & h1 {
+  h1 {
     font: 36px/34px "Gotham Book";
-    color: #FF595A;
+    color: $color-coral;
     margin-bottom: 40px;
   }
 
-  & div.button {
-    padding: 20px 24px;
-    background-color: #FF595A;
-    border-radius: 30px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  .button {
     font: 24px/24px "Gotham Medium";
-    color: #FFFFFF;
-    cursor: pointer;
-    transition: opacity 0.2s;
-
-    &:hover {
-      opacity: 0.6;
-    }
+    color: $color-white;
+    @include button();
   }
 }
 
 // Footer
 .footerCopyright {
-  font: 18px/17px "Gotham Book";
-  color: #B3B3B3;
+  font: 18px/1.5 "Gotham Book";
+  color: $color-grey;
   margin: 16px 0;
   text-align: center;
 }
