@@ -1,32 +1,33 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
+
+import styles from './index.module.scss';
 
 // Images
-import styles from './index.module.scss';
 import ItLogoIcon from '../../assets/announcement/it-logo.svg';
 import profileImage from '../../assets/announcement/profile.png';
 
 class Announcement extends Component {
     render() {
         return (
-            <Fragment>
+            <div>
                 {/* Announcement main container */}
-                <div className={styles.mainPageContainer}>
-                    <div className={styles.mainHeader}>
+                <div className={styles.announcementPageContainer}>
+                    <div className={styles.announcementPageHeader}>
                         <p>Toronto-based</p>
                         <p>Young</p>
-                        <p><img src={ItLogoIcon} className={styles.mainLogoIcon} />Professionals</p>
+                        <p><img src={ItLogoIcon} className={styles.logoIcon} />Professionals</p>
                     </div>
                 </div>
 
-                <div className={styles.announceContainer}>
-                    <h1 className={styles.announceHeader}>Announcement</h1>
+                <div className={styles.upcomingEventContainer}>
+                    <h1 className={styles.upcomingEventHeader}>Announcement</h1>
                     
                     {/* Announcement first upcoming event box */}
                     <div className={styles.eventBox}>
                         <h1>UPCOMING EVENT</h1>
 
                         <div className={styles.eventProfile}>
-                            <div className={styles.ImageContainer}>
+                            <div className={styles.profileImageContainer}>
                                 <img src={profileImage} className={styles.profileImageIcon} />
                                 <p>Jina</p>
                             </div>
@@ -43,7 +44,7 @@ class Announcement extends Component {
                     <div className={styles.multiEventBox}>
                         <div className={styles.announceEventItems}>
                             <div className={styles.eventProfile}>
-                                <div className={styles.ImageContainer}>
+                                <div className={styles.profileImageContainer}>
                                     <img src={profileImage} className={styles.profileImageIcon} />
                                     <p>Jina</p>
                                 </div>
@@ -56,7 +57,7 @@ class Announcement extends Component {
 
                         <div className={styles.announceEventItems}>
                             <div className={styles.eventProfile}>
-                                <div className={styles.ImageContainer}>
+                                <div className={styles.profileImageContainer}>
                                     <img src={profileImage} className={styles.profileImageIcon} />
                                     <p>Jina</p>
                                 </div>
@@ -69,7 +70,7 @@ class Announcement extends Component {
 
                         <div className={styles.announceEventItems}>
                             <div className={styles.eventProfile}>
-                                <div className={styles.ImageContainer}>
+                                <div className={styles.profileImageContainer}>
                                     <img src={profileImage} className={styles.profileImageIcon} />
                                     <p>Jina</p>
                                 </div>
@@ -82,7 +83,7 @@ class Announcement extends Component {
 
                         <div className={styles.announceEventItems}>
                             <div className={styles.eventProfile}>
-                                <div className={styles.ImageContainer}>
+                                <div className={styles.profileImageContainer}>
                                     <img src={profileImage} className={styles.profileImageIcon} />
                                     <p>Jina</p>
                                 </div>
@@ -94,9 +95,7 @@ class Announcement extends Component {
                         </div>
                     </div>
                 </div>
-
-
-            </Fragment>
+            </div>
         );
     }
 }
