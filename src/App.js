@@ -17,10 +17,10 @@ class App extends Component {
         <div className="siteContainer">
           <Navigation isLoggedIn={localStorage.getItem('user')} />
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/announcement" component={Announcement} />
-            <Route exact path="/about" component={About} />
+            <Route exact={true} path="/login" component={Login} />
+            <Route exact={true} path="/" component={Home} />
+            <Route exact={true} path="/announcement" component={Announcement} />
+            <Route exact={true} path="/about" component={About} />
           </Switch>
         </div>
       </BrowserRouter>
