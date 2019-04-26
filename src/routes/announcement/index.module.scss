@@ -1,50 +1,51 @@
-.mainPageContainer {
+$to-base-color: #555555;
+$to-base-white: #ffffff;
+%to-base-font{
+  font-family : "Gotham Medium";
+  font-weight: 500;	
+}
+
+.announcementPageContainer {
     display: flex;
     flex-direction: column;
     padding: 80px 0 0;
-    background: url("../../assets/announcement/announcement_bg.png") 1366px 680px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background: url("../../assets/announcement/announcement_bg.png")no-repeat fixed center;
     min-width: 1366px;
     min-height: 680px;
     margin: 0 auto;
 }
 
-.mainHeader{
+.announcementPageHeader{
     margin-top: 214px;
     margin-left: 145px;
-    color: #FFFFFF;	
-    font-family: Gotham;	
-    font-size: 80px;	
-    font-weight: 500;	
-    letter-spacing: -1px;	
+    color: $to-base-white;
+    @extend %to-base-font;	
+    font-size: 60px;	
     line-height: 96px;
 }
   
-  .mainLogoIcon {
+  .logoIcon {
     height: 73px;	
     width: 73px;	
     border-radius: 10px;
     margin-right: 10px;	
   }
 
-  .announceContainer{
+  .upcomingEventContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 146px 0 0 0;
     min-width: 1366px;
     min-height: auto;
     margin: 0 auto;
     background-color: #F9F9F9;
   }
 
-  .announceHeader{
-    color: #555555;	
-    font-family: Gotham;	
-    font-size: 35px;
-    font-weight: 500;	
+  .upcomingEventHeader{
+    color: $to-base-color;	
+    @extend %to-base-font;
+    margin-top: 146px;	
+    font-size: 35px;	
     line-height: 42px;
   }
 
@@ -55,16 +56,15 @@
     margin-top: 91px;
     width: 853px;	
     border-radius: 10px 10px 0 0;	
-    background-color: #FFFFFF;	
+    background-color: $to-base-white;	
     box-shadow: 0 1px 25px 1px rgba(238,238,238,0.75);
   }
 
   .eventBox h1{
     margin-top: 75px; 
     color: #FF595A;	
-    font-family: Gotham;	
-    font-size: 30px;	
-    font-weight: 500;	
+    @extend %to-base-font;
+    font-size: 30px;		
     line-height: 36px;	
     margin-bottom: 10px;
   }
@@ -75,7 +75,7 @@
     width: 675px;
 }
 
-.ImageContainer p{
+.profileImageContainer p{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,21 +92,23 @@
     margin: 30px 0 50px 50px;
 }
 
+.eventContentBox h2{
+  margin: 0;
+}
+
 .eventContentBox span{
     padding-left: 10px;
-    color: #555555;	
-    font-family: Gotham;	
-    font-size: 13px;	
-    font-weight: 500;	
+    color:$to-base-color;	
+    @extend %to-base-font;
+    font-size: 13px;		
     line-height: 22px;
 }
 
 .eventContentBox p{
     padding-top: 10px;
-    color: #555555;	
-    font-family: Gotham;	
+    color: $to-base-color;	
     font-size: 18px;	
-    font-weight: 500;	
+    @extend %to-base-font;	
     line-height: 22px;
 }
 
@@ -115,10 +117,9 @@
     width: 150px;	
     border-radius: 7px;	
     background-color: #FF595A;
-    color: #FFFFFF;	
-    font-family: Gotham;	
+    color: $to-base-white;	
+    @extend %to-base-font;	
     font-size: 24px;	
-    font-weight: 500;	
     line-height: 29px;	
     text-align: center;
     margin-bottom: 70px;
@@ -132,12 +133,8 @@
     width: 853px;	
     margin: 100px 0 124px 0;
     border-radius: 10px 10px 0 0;	
-    background-color: #FFFFFF;	
+    background-color: $to-base-white;	
     box-shadow: 0 1px 20px 1px rgba(238,238,238,0.7);
-}
-
-.announceEventItems{
-    margin-top: 1.25rem;
 }
 
 .announceEventItems:first-child{
