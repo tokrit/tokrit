@@ -18,6 +18,7 @@ class Announcement extends Component {
                 Young<br/>
                 <img src={ItLogoIcon} className={styles.logoIcon} />Professionals
               </h1>
+              <hr/>
             </div>
           </div>
 
@@ -41,48 +42,48 @@ class Announcement extends Component {
               <button className={styles.eventButton}>RSVP</button>
             </div>
 
-            {/* Announcement second upcoming event box */}
-            <div className={styles.multiEventBox}>
-              <div className={styles.announceEventItems}>
+            {/* List of upcoming events */}
+            <div className={styles.eventBoxesContainer}>
+              <div className={styles.eventBox}>
                   <div className={styles.eventProfile}>
                       <div className={styles.profileImageContainer}>
                           <img src={profileImage} className={styles.profileImageIcon} />
                           <p>Jina</p>
                       </div>
                       <div className={styles.eventContentBox}>
-                          <h2>Hackday 3<span>April 14, 2019</span></h2>
+                          <h2>Hackday 3 <span>April 14, 2019</span></h2>
                           <p>350 Victoria St, Toronto, ON M5B 2K3</p>
                       </div>
                   </div>
               </div>
 
-              <div className={styles.announceEventItems}>
+              <div className={styles.eventBox}>
                   <div className={styles.eventProfile}>
                       <div className={styles.profileImageContainer}>
                           <img src={profileImage} className={styles.profileImageIcon} />
                           <p>Jina</p>
                       </div>
                       <div className={styles.eventContentBox}>
-                          <h2>Hackday 2<span>March 31, 2019</span></h2>
+                          <h2>Hackday 2 <span>March 31, 2019</span></h2>
                           <p>350 Victoria St, Toronto, ON M5B 2K3</p>
                       </div>
                   </div>
               </div>
 
-              <div className={styles.announceEventItems}>
+              <div className={styles.eventBox}>
                   <div className={styles.eventProfile}>
                       <div className={styles.profileImageContainer}>
                           <img src={profileImage} className={styles.profileImageIcon} />
                           <p>Jina</p>
                       </div>
                       <div className={styles.eventContentBox}>
-                          <h2>CHI-MC<span>March 17, 2019</span></h2>
+                          <h2>CHI-MC <span>March 17, 2019</span></h2>
                           <p>350 Victoria St, Toronto, ON M5B 2K3</p>
                       </div>
                   </div>
               </div>
 
-              <div className={styles.announceEventItems}>
+              <div className={styles.eventBox}>
                   <div className={styles.eventProfile}>
                       <div className={styles.profileImageContainer}>
                           <img src={profileImage} className={styles.profileImageIcon} />
