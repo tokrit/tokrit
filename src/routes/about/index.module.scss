@@ -1,7 +1,7 @@
 @import "../../styles/variables.scss";
 
 // About Header Section
-.aboutHeadContainer {
+.aboutHeadContainer{
   display: flex;
   flex-direction: column;
   padding: 80px 0 0;
@@ -14,10 +14,10 @@
     padding: 0 145px;
     color: $color-white;
   
-    h1 {
+    h1{
       font: 80px/84px "Gotham Medium";
   
-      .logoIcon {
+      .logoIcon{
         height: 73px;
         width: 73px;
         border-radius: 10px;
@@ -62,11 +62,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top:28px;
+            margin-top: 28px;
 
             img{
-                width:144px;
-                height:144px;
+                width: 144px;
+                height: 144px;
             }
         }
 
