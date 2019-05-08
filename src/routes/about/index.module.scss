@@ -1,0 +1,143 @@
+@import "../../styles/variables.scss";
+
+// About Header Section
+.aboutHeadContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0 0;
+  background: url("../../assets/about/about_bg.png") center/cover no-repeat;
+  min-height: 600px;
+}
+
+.aboutPageHeader{
+    margin: 134px 0 0;
+    padding: 0 145px;
+    color: $color-white;
+  
+    h1{
+      font: 80px/84px "Gotham Medium";
+  
+      .logoIcon{
+        height: 73px;
+        width: 73px;
+        border-radius: 10px;
+        margin-right: 10px;
+      }
+    }
+}
+
+//What We Do Section
+.whatWeDoContainer{
+    text-align: center;
+
+    h2{
+        font: 500 35px/42px "Gotham Medium";
+        margin: 105px 0 50px 0;          
+        color: #555555;   
+    }
+
+    p{
+        font: 500 20px/30px "Gotham Medium";
+        color: #9B9B9B;
+        width: 852px;
+        margin: auto;
+    }
+}
+
+// Position Item Section
+.positionContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 102px;
+    height: 500px;
+
+    & .positionItems{
+        height: 200px;
+        width: 200px;
+        color: $color-white;
+        box-shadow: 0 1px 20px 0 rgba(221,221,221,0.5);
+
+        & .positionItemsIconBox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 28px;
+
+            img{
+                width: 144px;
+                height: 144px;
+            }
+        }
+
+        & .positionRoles{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 70px;
+            
+            h3{
+                font: 500 25px/30px "Gotham Medium";
+                color: #555555;
+                margin-bottom: 33px;
+            }
+
+            p{
+                font: 500 20px/24px "Gotham Medium";
+                color: #9B9B9B;
+                padding-bottom: 18px;
+            }
+        }
+    }
+
+    & .positionItems:nth-child(2){
+        margin: 0 127px;
+    }
+}
+
+//Activity Section
+.activityContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 225px;
+
+    h2{
+        font: 500 35px/42px "Gotham Medium";
+        color: #555555;
+        margin-top: 100px;
+    }
+}
+
+.activityItemsBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    & .activityItems{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .activityItemsIcon{
+            margin: 62px 9px 0 9px;
+            height: 200px;
+            width: 200px;
+            background-color: $color-white;
+            box-shadow: 0 1px 20px 0 rgba(221,221,221,0.5);
+            text-align: center;
+
+            img{
+                width: 116px;
+                height: 116px;
+                margin-top: 43px;
+            }
+        }
+
+        & .activityItemsLabel{
+            font: 500 20px/24px "Gotham Medium";
+            color: #555555;
+            margin-top: 50px;
+        }
+    }
+}
