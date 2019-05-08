@@ -1,106 +1,121 @@
 @import "../../styles/variables.scss";
 
 // Header section
-.projectPageMain {height: 679px;	width: 1366px;
-    background:rgba(24,34,55,0.3) url("../../assets/project/project_bg.png") center/1366px 679px no-repeat;
-}
-.projectPageMain header {
-    margin-top:214px; 
-    margin-left:145px;
-}
-.projectPageMain h1 {
-    height: 160px;	width: 1202px;	color: #FFFFFF;	font-family: Gotham Medium;	font-size: 80px;	font-weight: 500;	letter-spacing: -1px;	line-height: 96px;
-}
-.projectPageMain h2 { margin-top:67px;	height: 90px;	width: 300px;}
-.projectPageMain h2 img { height:90px; width:300px; }
+.projectPageMain {
+  height: 679px;
+  width: 1366px;
+  background: rgba(24, 34, 55, 0.3) url("../../assets/project/project_bg.png")
+    center/1366px 679px no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  //justify-content: center;
 
+  header {
+    padding-left: 145px;
+    min-width: 100%;
+
+    h1 {
+      height: 160px;
+      color: $color-white;
+      font: 500 80px/80px "Gotham Medium";
+      letter-spacing: -1px;
+    }
+
+    h2 {
+      margin-top: 67px;
+      height: 90px;
+      min-width: 300px;
+    }
+
+    h2 img {
+      height: 90px;
+      width: 300px;
+      float: left;
+    }
+
+    hr {
+      margin: 42px 0 0 41px;
+      box-sizing: border-box;
+      height: 3px;
+      min-width: 882px;
+      float: left;
+      border: 2px solid #ffffff;
+      opacity: 0.5;
+    }
+  }
+}
 
 // Content section
 .projectPageContent {
-    margin: 0 auto;
-    padding: 137px 0;
-}
+  margin: 0 auto;
+  padding: 137px 0;
 
-.projectPageContent h3 {
-	height: 35px;
-	width: 246px;
-	color: #555555;
-	font-family: Gotham Medium;
-	font-size: 35px;
-	font-weight: 500;
-	line-height: 42px;
-    text-align: center;
+  h3 {
     margin: 0 auto;
-}
-
-.projectPageContentSubHeader {
-	height: 60px;
-	max-width: 700px;
-	color: #000000;
-	font-family: Gotham Medium;
-	font-size: 20px;
-	font-weight: 500;
-	line-height: 30px;
+    height: 35px;
+    width: 246px;
+    color: #555555;
+    font: 500 35px/42px "Gotham Medium";
     text-align: center;
+  }
+
+  .projectPageContentSubHeader {
     margin: 46px auto 75px auto;
-}
-
-.projectPageContentServices { 
-    min-height:100px;	width: 854px; display:flex; flex-wrap: wrap; margin:0 auto;
-    justify-content: space-between;   
-}
-.projectPageContentServices a { 
-
-    
-    text-decoration: none;
-    width: 250px; 
-    //flex: 1;
-    /*
-    flex: 0 0 calc(33.33% - 52px);
-    min-width: calc(33.33% - 52px);
-    margin-right:52px;
-    */
-}
-
-.projectPageContentServices header { 
-    height: 250px; 
-    background:#EEEEEE url("../../assets/project/empty-image-bg.png") center/73px 31px no-repeat;
-}
-.projectPageContentServices section {
-    margin-top: 28px;
-    margin-bottom: 50px;
-    min-height: 18px;    
-    color: #555555;	
-    font-family: Gotham Medium;	
-    font-size: 18px;	
-    font-weight: 500;	
-    line-height: 22px;	
+    height: 60px;
+    max-width: 700px;
+    color: $color-black;
+    font: 500 20px/30px "Gotham Medium";
     text-align: center;
-}
+  }
 
-.projectPageContentFooter {
-	height: 30px;
-	width: 740px;
-	color: #000000;
-	font-family: Gotham Medium;
-	font-size: 20px;
-	font-weight: 500;
-	line-height: 30px;
-    text-align: center;
-    margin: 95px auto 55px auto;
-}
-
-.projectPageContentBtn {
-	height: 75px;
-	width: 336px;
-	border-radius: 7px;
-	background-color: #FF595A;
-	color: #FFFFFF;
-	font-family: Gotham Medium;
-	font-size: 24px;
-	font-weight: 500;
-	line-height: 29px;
-    text-align: center;
+  .projectPageContentServices {
     margin: 0 auto;
-    display:block;
+    min-height: 100px;
+    width: 854px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      width: 250px;
+    }
+
+    header {
+      height: 250px;
+      background: #eeeeee url("../../assets/project/empty-image-bg.png")
+        center/73px 31px no-repeat;
+    }
+
+    section {
+      margin-top: 28px;
+      margin-bottom: 50px;
+      min-height: 18px;
+      color: #555555;
+      font: 500 18px/22px "Gotham Medium";
+      text-align: center;
+    }
+  }
+
+  .projectPageContentFooter {
+    margin: 95px auto 55px auto;
+    height: 30px;
+    width: 740px;
+    color: $color-black;
+    font: 500 20px/30px "Gotham Medium";
+    text-align: center;
+  }
+
+  .projectPageContentBtn {
+    margin: 0 auto;
+    height: 75px;
+    width: 336px;
+    border-radius: 7px;
+    background-color: $color-coral;
+    color: $color-white;
+    font: 500 24px/29px "Gotham Medium";
+    text-align: center;
+    display: block;
+  }
 }
