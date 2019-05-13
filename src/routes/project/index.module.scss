@@ -16,6 +16,7 @@
     min-width: 100%;
 
     h1 {
+      margin-bottom: 67px;
       height: 160px;
       color: $color-white;
       font: 500 80px/80px "Gotham Medium";
@@ -23,7 +24,6 @@
     }
 
     h2 {
-      margin-top: 67px;
       height: 90px;
       min-width: 300px;
     }
@@ -52,7 +52,7 @@
   padding: 137px 0;
 
   h3 {
-    margin: 0 auto;
+    margin: 0 auto 46px auto;
     height: 35px;
     width: 246px;
     color: #555555;
@@ -61,7 +61,7 @@
   }
 
   .projectPageContentSubHeader {
-    margin: 46px auto 75px auto;
+    margin: 0 auto 75px auto;
     height: 60px;
     max-width: 700px;
     color: $color-black;
@@ -70,7 +70,7 @@
   }
 
   .projectPageContentServices {
-    margin: 0 auto;
+    margin: 0 auto 95px auto;
     min-height: 100px;
     width: 854px;
     display: flex;
@@ -83,13 +83,13 @@
     }
 
     header {
+      margin-bottom: 28px;
       height: 250px;
       background: #eeeeee url("../../assets/project/empty-image-bg.png")
         center/73px 31px no-repeat;
     }
 
     section {
-      margin-top: 28px;
       margin-bottom: 50px;
       min-height: 18px;
       color: #555555;
@@ -99,7 +99,7 @@
   }
 
   .projectPageContentFooter {
-    margin: 95px auto 55px auto;
+    margin: 0 auto 55px auto;
     height: 30px;
     width: 740px;
     color: $color-black;
