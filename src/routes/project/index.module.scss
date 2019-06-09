@@ -1,0 +1,121 @@
+@import "../../styles/variables.scss";
+
+// Header section
+.projectPageMain {
+  height: 679px;
+  width: 1366px;
+  background: rgba(24, 34, 55, 0.3) url("../../assets/project/project_bg.png")
+    center/1366px 679px no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  //justify-content: center;
+
+  header {
+    padding-left: 145px;
+    min-width: 100%;
+
+    h1 {
+      margin-bottom: 67px;
+      height: 160px;
+      color: $color-white;
+      font: 500 80px/80px "Gotham Medium";
+      letter-spacing: -1px;
+    }
+
+    h2 {
+      height: 90px;
+      min-width: 300px;
+    }
+
+    h2 img {
+      height: 90px;
+      width: 300px;
+      float: left;
+    }
+
+    hr {
+      margin: 42px 0 0 41px;
+      box-sizing: border-box;
+      height: 3px;
+      min-width: 882px;
+      float: left;
+      border: 2px solid #ffffff;
+      opacity: 0.5;
+    }
+  }
+}
+
+// Content section
+.projectPageContent {
+  margin: 0 auto;
+  padding: 137px 0;
+
+  h3 {
+    margin: 0 auto 46px auto;
+    height: 35px;
+    width: 246px;
+    color: #555555;
+    font: 500 35px/42px "Gotham Medium";
+    text-align: center;
+  }
+
+  .projectPageContentSubHeader {
+    margin: 0 auto 75px auto;
+    height: 60px;
+    max-width: 700px;
+    color: $color-black;
+    font: 500 20px/30px "Gotham Medium";
+    text-align: center;
+  }
+
+  .projectPageContentServices {
+    margin: 0 auto 95px auto;
+    min-height: 100px;
+    width: 854px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      width: 250px;
+    }
+
+    header {
+      margin-bottom: 28px;
+      height: 250px;
+      background: #eeeeee url("../../assets/project/empty-image-bg.png")
+        center/73px 31px no-repeat;
+    }
+
+    section {
+      margin-bottom: 50px;
+      min-height: 18px;
+      color: #555555;
+      font: 500 18px/22px "Gotham Medium";
+      text-align: center;
+    }
+  }
+
+  .projectPageContentFooter {
+    margin: 0 auto 55px auto;
+    height: 30px;
+    width: 740px;
+    color: $color-black;
+    font: 500 20px/30px "Gotham Medium";
+    text-align: center;
+  }
+
+  .projectPageContentBtn {
+    margin: 0 auto;
+    height: 75px;
+    width: 336px;
+    border-radius: 7px;
+    background-color: $color-coral;
+    color: $color-white;
+    font: 500 24px/29px "Gotham Medium";
+    text-align: center;
+    display: block;
+  }
+}
